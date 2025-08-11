@@ -1,7 +1,11 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+ 
+ # This WorkFlow uses actions that are not:  
+
+ # Certified by GitHub . 🤨 GOVERNED Internationally With:; 
+
+ # Separate Terms Of Service , Privacy Policies , & Provied BY: 
+ 
+ # Third-Parties W/ OR for Supported Documentations .  
 
 # This workflow lets you generate SLSA provenance file for your project.
 # The generation satisfies level 3 for the provenance requirements - see https://slsa.dev/spec/v0.1/requirements
