@@ -1,22 +1,34 @@
-# Install GitHub MCP Server in Copilot IDEs
 
-Quick setup guide for the GitHub MCP server in GitHub Copilot across different IDEs. For VS Code instructions, refer to the [VS Code install guide in the README](/README.md#installation-in-vs-code)
+ >< Install GitHub MCP Server in Copilot IDES: ;
+   |•|•|√Quick setup guide for the GitHub MCP server in GitHub Copilot across   
+    different IDEs. For VS Code instructions, refer to the [ VSCode Install  ; 
+     Guide '] in the ['README.MD#Installation-In-VS-Code.'] ;
+     
+>< REQUIRMENTS:
+ •|•|√•GitHub Copilot License Any Copilot plan (Free, Pro, Pro+, ;  
+ Business,  Enterprise for Copilot access. ;
+ •|•|√•GitHub Account; Individual Git•Hub Account( Organization/Enterprise   Membership), Optional for Git•Hub MCP Server Access. ; 
+>< MCP Servers in Copilot Policy: 
+   •|•|√•Organizations assigning Copilot seats must enable this policy for all ;MCP  access in Copilot for VS Code and Copilot Coding Agent – all other ;Copilot  IDEs will migrate to this policy in the coming months.
+ 
+ >< Editor Preview Policy:
+   •|•|√•Organizations assigning Copilot seats must enable this policy for OAuth ; 
+     access while the Remote GitHub MCP Server is in public preview.
 
-### Requirements:
-- **GitHub Copilot License**: Any Copilot plan (Free, Pro, Pro+, Business, Enterprise) for Copilot access
-- **GitHub Account**: Individual GitHub account (organization/enterprise membership optional) for GitHub MCP server access
-- **MCP Servers in Copilot Policy**: Organizations assigning Copilot seats must enable this policy for all MCP access in Copilot for VS Code and Copilot Coding Agent – all other Copilot IDEs will migrate to this policy in the coming months
-- **Editor Preview Policy**: Organizations assigning Copilot seats must enable this policy for OAuth access while the Remote GitHub MCP Server is in public preview
+  >**NOTE**:
+        •|•|√•All Copilot IDEs now support the remote GitHub MCP server. ;
+        VSCode offers   OAuth authentication, while Visual Studio, ;
+        'JetBrains IDE§ ' ;
+        Xcode, and Eclipse currently use PAT authentication with OAuth support ;  
+         coming  soon.
 
-> **Note:** All Copilot IDEs now support the remote GitHub MCP server. VS Code offers OAuth authentication, while Visual Studio, JetBrains IDEs, Xcode, and Eclipse currently use PAT authentication with OAuth support coming soon.
+  >< Visual Studio: ;
+   •|•|√•Requires Visual Studio 2022 version 17.14 or later.
 
-## Visual Studio
+  >< Remote Server: []'Recommended '[]
+   •|•|√•The remote GitHub MCP server is hosted by GitHub and provides automatic   
+    Updates with no local setup required.
 
-Requires Visual Studio 2022 version 17.14 or later.
-
-### Remote Server (Recommended)
-
-The remote GitHub MCP server is hosted by GitHub and provides automatic updates with no local setup required.
 
 #### Configuration
 1. Go to **Tools** → **Options** → **GitHub** → **Copilot** → **MCP Servers**
@@ -26,16 +38,16 @@ The remote GitHub MCP server is hosted by GitHub and provides automatic updates 
   "servers": {
     "github": {
       "url": "https://api.githubcopilot.com/mcp/",
-      "authorization_token": "Bearer YOUR_GITHUB_PAT"
+      "Authorization_Token": "Bearer YOUR_GITHUB_PAT" ;
+
     }
+
   }
+
 }
-```
-3. Restart Visual Studio
-
-### Local Server
-
-For users who prefer to run the GitHub MCP server locally. Requires Docker installed and running.
+ {Local Server: 
+   •|•|√•For users who prefer to run the GitHub MCP server locally. Requires   
+     Docker installed and running.
 
 #### Configuration
 1. Create an `.mcp.json` file in your solution directory
